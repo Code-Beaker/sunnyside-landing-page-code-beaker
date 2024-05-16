@@ -40,7 +40,17 @@ body {
   text-decoration: none;
   font-weight: var(--weight-semibold);
   color: var(--neutral-white);
-  font-size: var(--fs--1);
+  font-size: var(--fs-0);
+  outline-offset: 0.5rem;
+  opacity: 0.85;
+}
+
+.nav__link:hover {
+  opacity: 1;
+}
+
+.nav__link:focus {
+  outline: 0.15rem dotted white;
 }
 
 /* button */
@@ -54,4 +64,14 @@ body {
   text-transform: uppercase;
   color: var(--neutral-very-dark-desaturated-blue);
   border-radius: 5rem;
+  outline-offset: 0.25rem;
+  transition: 200ms ease-in-out;
+}
+
+.nav__btn:hover {
+  opacity: 0.85;
+}
+
+.nav__btn:focus {
+  outline: 0.175rem dotted white;
 }
