@@ -1,0 +1,35 @@
+:root {
+  /* font families */
+  --font-sans: "Barlow", sans-serif;
+  --font-serif: "Fraunces", serif;
+
+  /* font weights */
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-bolder: 900;
+
+  /* primary */
+  --primary-soft-red: hsl(7, 99%, 70%);
+  --primary-yellow: hsl(51, 100%, 49%);
+  --primary-dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --primary-dark-blue: hsl(198, 62%, 26%);
+  --primary-moderate-cyan: hsl(168, 34%, 41%);
+
+  /* neutral */
+  --neutral-very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --neutral-dark-grayish-blue: hsl(213, 9%, 39%);
+  --neutral-dark-grayish-blue: hsl(232, 10%, 55%);
+  --neutral-grayish-blue: hsl(210, 4%, 67%);
+  --neutral-white: hsl(0, 0%, 100%);
+
+  /* font-sizes with clamp() */
+  --fs--2: clamp(0.7813rem, 0.7747rem + 0.0326vi, 0.8rem);
+  --fs--1: clamp(0.9375rem, 0.9158rem + 0.1087vi, 1rem);
+  --fs-0: clamp(1.125rem, 1.0815rem + 0.2174vi, 1.25rem);
+  --fs-1: clamp(1.35rem, 1.2761rem + 0.3696vi, 1.5625rem);
+  --fs-2: clamp(1.62rem, 1.5041rem + 0.5793vi, 1.9531rem);
+  --fs-3: clamp(1.944rem, 1.771rem + 0.8651vi, 2.4414rem);
+  --fs-4: clamp(2.3328rem, 2.0827rem + 1.2504vi, 3.0518rem);
+  --fs-5: clamp(2.7994rem, 2.4462rem + 1.7658vi, 3.8147rem);
+  --fs-6: clamp(3.3592rem, 2.8691rem + 2.4507vi, 4.7684rem);
+}

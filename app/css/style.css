@@ -1,0 +1,57 @@
+@import "./globals.css";
+@import "./variables.css";
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* header */
+.header {
+  position: relative;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.header__image-bg {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+/* navbar */
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 10rem;
+  padding: 2rem 1.5rem;
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-weight: var(--weight-semibold);
+  color: var(--neutral-white);
+  font-size: var(--fs--1);
+}
+
+/* button */
+.nav__btn {
+  font-family: var(--font-serif);
+  text-decoration: none;
+  padding: min(2vh, 0.75rem) min(3vh, 1.5rem);
+  font-weight: var(--weight-bold);
+  font-size: var(--fs--1);
+  background-color: var(--neutral-white);
+  text-transform: uppercase;
+  color: var(--neutral-very-dark-desaturated-blue);
+  border-radius: 5rem;
+}
