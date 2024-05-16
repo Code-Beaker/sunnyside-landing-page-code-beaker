@@ -15,8 +15,8 @@ body {
 .header__image-bg {
   position: absolute;
   inset: 0;
-  height: 100%;
-  width: 100%;
+  max-height: 100%;
+  /* max-width: 100%; */
   z-index: -1;
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .nav__link:focus {
-  outline: 0.15rem dotted white;
+  outline: 0.2rem dotted white;
 }
 
 /* button */
@@ -65,7 +65,7 @@ body {
   color: var(--neutral-very-dark-desaturated-blue);
   border-radius: 5rem;
   outline-offset: 0.25rem;
-  transition: 200ms ease-in-out;
+  transition: 200ms opacity ease-in-out;
 }
 
 .nav__btn:hover {
@@ -73,5 +73,30 @@ body {
 }
 
 .nav__btn:focus {
-  outline: 0.175rem dotted white;
+  /* opacity: 1; */
+  outline: 0.2rem dotted white;
+}
+
+/* hero */
+.hero {
+  height: 90vh;
+  padding: 3rem;
+}
+
+.hero__content {
+  text-align: center;
+}
+
+.hero__heading {
+  font-size: var(--fs-4);
+  color: var(--neutral-white);
+  font-family: var(--font-serif);
+  text-transform: uppercase;
+}
+
+.hero__arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: min(10vh, 5rem);
 }
