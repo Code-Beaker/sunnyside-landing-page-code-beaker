@@ -262,7 +262,7 @@ body {
   font-family: var(--font-serif);
   margin-top: 5rem;
   color: var(--neutral-very-dark-desaturated-blue);
-  font-size: var(--fs--1);
+  font-size: var(--fs-0);
 }
 
 .testimonials__pos {
@@ -456,4 +456,25 @@ body {
   .products {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .testimonials__item {
+    padding: 1rem;
+  }
+
+  .testimonials__image-center {
+    padding: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .testimonials__profile-image {
+    max-width: 7.5rem;
+  }
+
+  .testimonials__grid {
+    gap: 1rem;
+  }
+  /* 
+  .footer__links {
+    gap: 1rem;
+  } */
 }
