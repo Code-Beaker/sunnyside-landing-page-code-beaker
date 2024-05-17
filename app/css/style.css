@@ -8,7 +8,7 @@ body {
 /* header */
 .header {
   position: relative;
-  max-height: 95vh;
+  max-height: 110vh;
   overflow: hidden;
 }
 
@@ -222,4 +222,57 @@ body {
 
 .photography {
   color: var(--primary-dark-blue);
+}
+
+/* testimonials */
+.testimonials {
+  padding: 4rem;
+}
+
+.testimonials__heading {
+  font-size: var(--fs-1);
+  text-transform: uppercase;
+  font-family: var(--font-serif);
+  color: var(--neutral-grayish-blue);
+  text-align: center;
+  margin-block: 3rem;
+  margin-bottom: 6rem;
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(auto, 1fr);
+  gap: 1rem;
+}
+
+.testimonials__image-center {
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.testimonials__profile-image {
+  max-width: 4rem;
+  border-radius: 50%;
+}
+
+.testimonials__item {
+  text-align: center;
+  padding: 2rem;
+}
+
+.testimonials__name {
+  font-family: var(--font-serif);
+  margin-top: 5rem;
+  color: var(--neutral-very-dark-desaturated-blue);
+  font-size: var(--fs--1);
+}
+
+.testimonials__pos {
+  font-size: var(--fs--2);
+  font-weight: var(--weight-semibold);
+  color: var(--neutral-dark-grayish-blue);
 }
