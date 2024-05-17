@@ -29,10 +29,21 @@
         </picture>
         <nav class="nav">
           <div class="nav__top">
-            <a href="index.html" aria-label="logo-home" class="nav__logo">
+            <a
+              tabindex="1"
+              href="index.html"
+              aria-label="Home Page"
+              class="nav__logo"
+            >
               <img src="public/images/logo.svg" alt="Logo of Sunnyside" />
             </a>
-            <button id="navToggleButton" class="nav__toggle-btn">
+            <button
+              aria-label="Navigation Menu"
+              id="navToggleButton"
+              class="nav__toggle-btn"
+              aria-hidden="false"
+              tabindex="1"
+            >
               <img src="public/images/icon-hamburger.svg" alt="" />
             </button>
           </div>
@@ -271,30 +282,60 @@
           </div>
           <div class="footer__links-container">
             <ul class="footer__links">
-              <li><a href="#" class="footer__link">About</a></li>
-              <li><a href="#" class="footer__link">Services</a></li>
-              <li><a href="#" class="footer__link">Projects</a></li>
+              <li>
+                <a aria-hidden="false" href="#" class="footer__link">About</a>
+              </li>
+              <li>
+                <a aria-hidden="false" href="#" class="footer__link"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a aria-hidden="false" href="#" class="footer__link"
+                  >Projects</a
+                >
+              </li>
             </ul>
           </div>
           <div class="footer__social-icons">
             <ul class="footer__social-icons-wrapper">
               <li>
-                <a href="#" class="footer__social-icon">
+                <a
+                  aria-hidden="false"
+                  aria-label="Facebook"
+                  href="#"
+                  class="footer__social-icon"
+                >
                   <img src="public/images/icon-facebook.svg" alt="" />
                 </a>
               </li>
               <li>
-                <a href="#" class="footer__social-icon">
+                <a
+                  aria-hidden="false"
+                  aria-label="Instagram"
+                  href="#"
+                  class="footer__social-icon"
+                >
                   <img src="public/images/icon-instagram.svg" alt="" />
                 </a>
               </li>
               <li>
-                <a href="#" class="footer__social-icon">
+                <a
+                  aria-hidden="false"
+                  aria-label="Twitter"
+                  href="#"
+                  class="footer__social-icon"
+                >
                   <img src="public/images/icon-twitter.svg" alt="" />
                 </a>
               </li>
               <li>
-                <a href="#" class="footer__social-icon">
+                <a
+                  aria-hidden="false"
+                  aria-label="Pinterest"
+                  href="#"
+                  class="footer__social-icon"
+                >
                   <img src="public/images/icon-pinterest.svg" alt="" />
                 </a>
               </li>
