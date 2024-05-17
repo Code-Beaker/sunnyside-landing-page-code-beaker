@@ -205,6 +205,7 @@ body {
   position: absolute;
   inset: 0;
   height: 100%;
+  width: 100%;
   object-fit: cover;
   z-index: -1;
 }
@@ -348,4 +349,38 @@ body {
 .footer__social-icon:focus {
   /* outline-color: var(--primary-dark-desaturated-cyan); */
   outline: 0.2rem dotted var(--primary-dark-desaturated-cyan);
+}
+
+/* responsive for mobile */
+@media (width < 50rem) {
+  .section__cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section__cols-text-content {
+    text-align: center;
+  }
+
+  .categories__section {
+    padding: 5rem;
+    padding-top: 25rem;
+    overflow: hidden;
+  }
+
+  .stand-out .section__cols-image-content {
+    order: 1;
+  }
+
+  .categories__section-bg {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
