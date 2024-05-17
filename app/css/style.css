@@ -351,8 +351,81 @@ body {
   outline: 0.2rem dotted var(--primary-dark-desaturated-cyan);
 }
 
+/* disable toggler on desktop */
+.nav__toggle-btn {
+  background: transparent;
+  border: none;
+  display: none;
+}
+
 /* responsive for mobile */
 @media (width < 50rem) {
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav__toggle-btn {
+    display: block;
+    cursor: pointer;
+    outline-offset: 0.5rem;
+    /* transition: 100ms ease-in-out; */
+  }
+
+  .nav__toggle-btn img {
+    display: block;
+  }
+
+  .nav__toggle-btn-focus {
+    outline: 0.25rem dotted var(--neutral-dark-grayish-blue);
+    /* rotate: 90deg; */
+  }
+
+  .nav__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    text-align: center;
+    /* position: absolute;
+    top: 5rem;
+    inset-inline: 2rem; */
+    background-color: var(--neutral-white);
+    padding: 3rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: none;
+  }
+
+  /* the little indicator */
+  /* 
+  .nav__links-show::before {
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    position: absolute
+    background: red;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    right: 0;
+  } */
+
+  .nav__links-show {
+    display: flex;
+  }
+
+  .nav__link {
+    color: var(--primary-dark-desaturated-cyan);
+  }
+
+  .nav__btn {
+    background-color: var(--primary-yellow);
+  }
+
   .section__cols {
     grid-template-columns: 1fr;
   }
