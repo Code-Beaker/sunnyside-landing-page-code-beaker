@@ -135,6 +135,9 @@ body {
 .section__cols-image-content {
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section__image-full {
@@ -192,4 +195,31 @@ body {
 
 #stand-out-link::after {
   background-color: var(--primary-soft-red);
+}
+
+/* categories */
+.categories__section {
+  padding: 5rem;
+  padding-top: 20rem;
+  text-align: center;
+  position: relative;
+  /* overflow: hidden; */
+  /* background-color: red; for preview */
+}
+
+/* image */
+.categories__section-bg {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.graphic-design {
+  color: var(--primary-dark-desaturated-cyan);
+}
+
+.photography {
+  color: var(--primary-dark-blue);
 }
