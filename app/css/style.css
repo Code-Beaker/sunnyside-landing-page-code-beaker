@@ -109,13 +109,6 @@ body {
   grid-auto-rows: minmax(auto, 1fr);
 }
 
-/* responsive section cols */
-@media (width < 40rem) {
-  .section__cols {
-    grid-template-columns: 1rem;
-  }
-}
-
 .section__cols-text-content {
   color: var(--neutral-very-dark-desaturated-blue);
   padding-block: 5rem;
